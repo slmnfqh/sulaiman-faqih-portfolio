@@ -23,26 +23,32 @@ export default function GlassHeader() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          {["experience", "skills", "projects", "awards", "education"].map(
-            (item, index) => (
-              <motion.a
-                key={item}
-                href={`#${item}`}
-                className="transition-colors hover:text-foreground/80 text-foreground/60"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.2, delay: index * 0.1 }}
-                whileHover={{ y: -2 }}
-              >
-                {item === "experience" && "💼 "}
-                {item === "skills" && "🛠️ "}
-                {item === "projects" && "🚀 "}
-                {item === "awards" && "🏆 "}
-                {item === "education" && "🎓 "}
-                {item.charAt(0).toUpperCase() + item.slice(1)}
-              </motion.a>
-            )
-          )}
+          {[
+            "experience",
+            "internships",
+            "skills",
+            "projects",
+            "awards",
+            "education",
+          ].map((item, index) => (
+            <motion.a
+              key={item}
+              href={`#${item}`}
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.2, delay: index * 0.1 }}
+              whileHover={{ y: -2 }}
+            >
+              {item === "experience" && "💼 "}
+              {item === "internships" && "🏢 "}
+              {item === "skills" && "🛠️ "}
+              {item === "projects" && "🚀 "}
+              {item === "awards" && "🏆 "}
+              {item === "education" && "🎓 "}
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </motion.a>
+          ))}
         </nav>
 
         <div className="flex items-center space-x-2">

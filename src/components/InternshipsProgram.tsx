@@ -1,29 +1,29 @@
-import { workExperience } from "@/lib/data";
+import { internships } from "@/lib/data";
 import TimelineItem from "./TimelineItem";
 import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
-export default function ExperienceSection() {
+export default function InternshipsSection() {
   return (
     <section
-      id="experience"
+      id="internships"
       className="py-12 bg-gradient-to-b from-muted/20 to-background"
     >
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            💼 Work Experience
+            🏢 Internships & Learning Programs
           </h2>
         </MotionWrapper>
-        <div className="mb-8">
-          {workExperience.map((job, index) => (
+        <div className="mb-2 md:mb-8">
+          {internships.map((intern, index) => (
             <TimelineItem
-              key={job.company + job.period}
-              title={`👨‍💻 ${job.position} | ${job.company}`}
-              subtitle={`📍 ${job.location}`}
-              date={`📅 ${job.period}`}
-              isLast={index === workExperience.length - 1}
+              key={intern?.company + intern?.period}
+              title={`👨‍💻 ${intern.position} | ${intern.company}`}
+              subtitle={`📍 ${intern.location}`}
+              date={`📅 ${intern.period}`}
+              isLast={index === internships.length - 1}
               index={index}
             >
               <motion.div
@@ -40,7 +40,7 @@ export default function ExperienceSection() {
                   <h4 className="text-sm font-medium">Key Achievements</h4>
                 </div>
                 <ul className="list-disc ml-4 space-y-2 text-sm text-justify">
-                  {job.achievements.map((achievement, i) => (
+                  {intern.achievements.map((achievement, i) => (
                     <motion.li
                       key={i}
                       className="text-muted-foreground relative"

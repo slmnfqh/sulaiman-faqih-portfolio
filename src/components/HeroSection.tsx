@@ -48,7 +48,7 @@ export default function HeroSection() {
               className="text-xl text-muted-foreground mb-6"
               variants={childVariants}
             >
-              Software Engineer 👨‍💻
+              Backend Developer 👨‍💻
             </motion.p>
 
             <motion.div
@@ -61,7 +61,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <MapPin className="h-4 w-4 mr-2" />
-                📍 {personalInfo.location}
+                {personalInfo.location}
               </motion.div>
 
               <motion.a
@@ -71,7 +71,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <Mail className="h-4 w-4 mr-2" />
-                ✉️ {personalInfo.email}
+                {personalInfo.email}
               </motion.a>
 
               <motion.a
@@ -83,7 +83,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <Github className="h-4 w-4 mr-2" />
-                🌟 GitHub
+                Github
               </motion.a>
 
               <motion.a
@@ -95,24 +95,27 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <Linkedin className="h-4 w-4 mr-2" />
-                🔗 LinkedIn
+                LinkedIn
               </motion.a>
             </motion.div>
           </div>
 
           <motion.div
-            className="mt-6 md:mt-0 flex justify-center"
+            className="mt-9 md:mt-0 flex justify-center"
             variants={childVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            <div className="relative group w-48 md:w-60 aspect-square">
+              <div
+                className="absolute -inset-1 rounded-full blur-lg opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200
+    bg-gradient-to-r from-pink-500 to-fuchsia-900 
+    dark:from-pink-500 dark:to-purple-500"
+              ></div>
               <img
-                src="/profile.jpg"
+                src="/faqih.png"
                 alt="Profile"
-                className="w-48 md:w-60 rounded-full relative ring-2 ring-purple-500/50"
-                style={{ objectFit: "cover" }}
+                className="w-full h-full md:h-65 rounded-full object-cover object-top relative"
               />
             </div>
           </motion.div>
@@ -120,17 +123,20 @@ export default function HeroSection() {
 
         <MotionWrapper>
           <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-purple-500/20 dark:border-purple-500/10 shadow-sm">
-            <p className="text-muted-foreground pl-4 py-2 mb-4 relative">
+            <p className="text-muted-foreground pl-4 py-2 mb-4 relative text-justify">
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
-              🚀 Passionate software engineer with a versatile skill set
-              spanning multiple domains. I thrive on solving complex challenges
-              across different platforms and environments, adapting quickly to
-              new technologies and methodologies. My holistic approach combines
-              technical expertise with creative problem-solving, allowing me to
-              develop solutions that are both innovative and practical. I'm
-              driven by continuous learning and a commitment to excellence,
-              whether working independently or collaborating with diverse teams
-              to create impactful, scalable solutions.
+              A detail-oriented, persistent, and fast-adapting individual with
+              strong enthusiasm for learning and solving technical challenges. I
+              have a solid foundation as a Backend Developer with 1+ year of
+              experience, including API development, payment integration
+              (Midtrans), and digital service implementations such as PPOB
+              systems. Skilled in Node.js, NestJS, TypeORM, PostgreSQL, and
+              MySQL, and familiar with frontend technologies like React,
+              Laravel, and Vite. enabling me to work collaboratively across
+              teams to ensure smooth system integration. I’ve contributed to
+              various freelance and independent projects, and was selected to
+              join national programs like Bangkit Academy and Digitalent
+              Kominfo, further strengthening my technical and soft skills.
             </p>
           </div>
         </MotionWrapper>
