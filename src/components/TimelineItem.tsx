@@ -25,7 +25,7 @@ export default function TimelineItem({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.2 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true }}
     >
       <div className="flex flex-col items-center">
         <motion.div
@@ -38,7 +38,7 @@ export default function TimelineItem({
             damping: 15,
             delay: index * 0.2 + 0.2,
           }}
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "-150px" }} // atau hapus margin
         />
         {!isLast && (
           <motion.div
@@ -50,7 +50,7 @@ export default function TimelineItem({
           />
         )}
       </div>
-      <div className={cn("pb-8", isLast ? "pb-0" : "")}>
+      <div className={cn("pb-8", isLast && "mb-16")}>
         <motion.div
           className="flex flex-col gap-0.5"
           initial={{ opacity: 0, x: -20 }}
