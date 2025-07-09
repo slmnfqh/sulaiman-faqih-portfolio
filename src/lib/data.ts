@@ -138,23 +138,23 @@ export const projects = [
 
 export const awards = [
   {
-    name: "lorem ipsum dolor sit amet",
+    name: "lorem ",
     issuer: "lorem ipsum dolor sit amet",
-    date: "lorem ipsum dolor sit amet",
+    date: "dolor",
     type: "lorem ipsum dolor sit amet",
     position: "lorem ipsum dolor sit amet",
   },
   {
-    name: "lorem ipsum dolor sit amet",
+    name: "ipsum ",
     issuer: "lorem ipsum dolor sit amet",
-    date: "lorem ipsum dolor sit amet",
+    date: "ipsum",
     type: "lorem ipsum dolor sit amet",
     position: "lorem ipsum dolor sit amet",
   },
   {
-    name: "lorem ipsum dolor sit amet",
+    name: "dolor ",
     issuer: "lorem ipsum dolor sit amet",
-    date: "lorem ipsum dolor sit amet",
+    date: "lorem ",
     type: "lorem ipsum dolor sit amet",
     position: "lorem ipsum dolor sit amet",
   },

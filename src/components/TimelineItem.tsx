@@ -38,7 +38,7 @@ export default function TimelineItem({
             damping: 15,
             delay: index * 0.2 + 0.2,
           }}
-          viewport={{ once: true, margin: "-150px" }} // atau hapus margin
+          viewport={{ once: true }}
         />
         {!isLast && (
           <motion.div
@@ -46,7 +46,7 @@ export default function TimelineItem({
             initial={{ height: 0 }}
             whileInView={{ height: "100%" }}
             transition={{ duration: 0.8, delay: index * 0.2 + 0.3 }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true }}
           />
         )}
       </div>
@@ -56,7 +56,7 @@ export default function TimelineItem({
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: index * 0.2 + 0.1 }}
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true }}
         >
           <h3 className="font-medium">{title}</h3>
           <p className="text-sm text-muted-foreground">{subtitle}</p>
@@ -66,7 +66,7 @@ export default function TimelineItem({
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: index * 0.2 + 0.4 }}
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true }}
         >
           {children}
         </motion.div>
