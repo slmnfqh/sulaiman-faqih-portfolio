@@ -22,21 +22,6 @@ export const workExperience = [
   },
 ];
 
-export const education = [
-  {
-    institution: "Sri Krishna College of Engineering and Technology",
-    location: "Coimbatore, India",
-    degree: "B Tech Information Technology",
-    period: "Jun 2021 - Jun 2025",
-    achievements: [
-      "President of the Department of Information Technology",
-      "G20 student delegate",
-      "Organized multiple technical workshops and events",
-      "Represented my college in multiple national and international hackathons and won.",
-    ],
-  },
-];
-
 export const internships = [
   {
     company: "MSIB Bangkit Academy by Google, Goto, Tokopedia, Traveloka",
@@ -106,7 +91,12 @@ export const skills = {
     "Prisma",
     "MongoDB",
   ],
-  cloudAndDevOps: ["Google Cloud Platform", "Docker", "GitHub Actions"],
+  cloudAndDevOps: [
+    "Google Cloud Platform",
+    "Docker",
+    "GitHub Actions",
+    "Netlify",
+  ],
   toolsAndServices: [
     "Swagger",
     "Postman",
@@ -148,24 +138,34 @@ export const projects = [
 
 export const awards = [
   {
-    name: "IEEE YESIST12 Hackathon",
-    issuer: "IEEE",
-    date: "Sep 2022",
-    type: "International",
-    position: "Second Place",
+    name: "lorem ipsum dolor sit amet",
+    issuer: "lorem ipsum dolor sit amet",
+    date: "lorem ipsum dolor sit amet",
+    type: "lorem ipsum dolor sit amet",
+    position: "lorem ipsum dolor sit amet",
   },
   {
-    name: "Prodigi Cognizant Hackathon",
-    issuer: "Cognizant",
-    date: "Feb 2023",
-    type: "National",
-    position: "Second Runner-up",
+    name: "lorem ipsum dolor sit amet",
+    issuer: "lorem ipsum dolor sit amet",
+    date: "lorem ipsum dolor sit amet",
+    type: "lorem ipsum dolor sit amet",
+    position: "lorem ipsum dolor sit amet",
   },
   {
-    name: "Cisco Thingqbator Hackathon",
-    issuer: "Cisco",
-    date: "Jan 2023",
-    type: "National",
-    position: "First Runner-up",
+    name: "lorem ipsum dolor sit amet",
+    issuer: "lorem ipsum dolor sit amet",
+    date: "lorem ipsum dolor sit amet",
+    type: "lorem ipsum dolor sit amet",
+    position: "lorem ipsum dolor sit amet",
+  },
+];
+
+export const education = [
+  {
+    institution: "University Bina Sarana Informatika",
+    location: "Jakarta, Indonesia",
+    degree: "Information Technology",
+    period: "Jun 2021 - Agu 2025 (Expected)",
+    achievements: ["lorem ipsum dolor sit amet."],
   },
 ];
